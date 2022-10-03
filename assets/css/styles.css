@@ -1,0 +1,240 @@
+section {
+	margin-top:100px;
+}
+
+.formContato {
+    width: 100%;  
+ }
+
+.formContato input {
+    width: 90%;  
+    margin-left: 10px;  
+    margin-right: 10px;  
+ }
+
+ .formContato textarea {  
+    width: 90%;  
+    margin-left: 10px;  
+    margin-right: 10px;  
+ } 
+
+ .botaoContato {  
+    margin-left: 10px;  
+    margin-right: 10px;  
+    margin-top: 1px;  
+ }
+
+ .meuContato input {  
+    padding-left: 20px;  
+    color: #292929;  
+    font-size: 18px;  
+    background-color: #E9E9E9;  
+    border: 1px solid #E9E9E9;  
+    -moz-border-radius: 5px;  
+    -webkit-border-radius: 5px;  
+    border-radius: 5px;  
+    height: 40px;  
+    margin-bottom: 20px;  
+    border-bottom: 1px solid #ccc;  
+    border-left: 1px solid #ccc;  
+ }  
+
+ .meuContato textarea {  
+    padding-left: 20px;  
+    color: #292929;  
+    font-size: 18px;  
+    background-color: #E9E9E9;  
+    border: 1px solid #E9E9E9;  
+    -moz-border-radius: 5px;  
+    -webkit-border-radius: 5px;  
+    border-radius: 5px;  
+    height: 200px;  
+    margin-bottom: 20px;  
+    border-bottom: 1px solid #ccc;  
+    border-left: 1px solid #ccc;  
+ }  
+
+ .botaoContato {  
+    border-radius: 4px;  
+    color: #fff;  
+    padding: 2px 40px;  
+    height: 40px;  
+    margin-top: 18px;  
+    opacity: 0.9;  
+    margin-bottom: 20px;  
+    cursor: pointer;  
+    background: #B22222;  
+    display: inline-block;  
+    border: none;  
+    border-bottom: 1px solid #500707;  
+    border-right: 1px solid #500707;  
+ }
+
+ .botaoContato:hover {  
+    opacity: 1.0;  
+    transition: 1s;  
+ }
+
+
+/* Spotlight */
+
+.spotlight {
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+}
+
+.spotlight .image {
+    -moz-order: 1;
+    -webkit-order: 1;
+    -ms-order: 1;
+    order: 1;
+    border-radius: 0;
+    width: 40%;
+}
+
+    .spotlight .image img {
+        border-radius: 0;
+        width: 100%;
+    }
+
+.spotlight .content {
+    padding: 2em 4em 0.1em 4em ;
+    -moz-order: 2;
+    -webkit-order: 2;
+    -ms-order: 2;
+    order: 2;
+    max-width: 48em;
+    width: 60%;
+}
+
+.spotlight:nth-child(2n) {
+    -moz-flex-direction: row-reverse;
+    -webkit-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+}
+
+.spotlight:nth-child(3) {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.spotlight:nth-child(4) {
+    background-color: rgba(197, 194, 194, 0.452);
+}
+
+.spotlight:nth-child(5) {
+    background-color: rgba(241, 245, 8, 0.904);
+}
+
+.spotlight:nth-child(6) {
+    background-color: rgba(144, 170, 219, 0.226);
+}
+
+.spotlight:nth-child(7) {
+    background-color: rgba(195, 218, 233, 0.918);
+}
+
+.spotlight:nth-child(8) {
+    background-color: rgba(36, 22, 230, 0.897);
+}
+
+.spotlight:nth-child(9) {
+    background-color: rgba(241, 150, 150, 0.226);
+}
+
+.spotlight:nth-child(10) {
+    background-color: rgba(203, 204, 219, 0.75);
+}
+
+@media screen and (max-width: 1280px) {
+
+    .spotlight .image {
+        width: 45%;
+    }
+
+    .spotlight .content {
+        width: 55%;
+    }
+
+}
+
+@media screen and (max-width: 980px) {
+
+    .spotlight {
+        display: block;
+    }
+
+        .spotlight br {
+            display: none;
+        }
+
+        .spotlight .image {
+            width: 100%;
+        }
+
+        .spotlight .content {
+            padding: 4em 3em 2em 3em ;
+            max-width: none;
+            text-align: center;
+            width: 100%;
+        }
+
+}
+
+@media screen and (max-width: 736px) {
+
+    .spotlight .content {
+        padding: 3em 2em 1em 2em ;
+    }
+
+}
+
+/* Image */
+
+.image {
+    border-radius: 3px;
+    border: 0;
+    display: inline-block;
+    position: relative;
+}
+
+    .image img {
+        border-radius: 3px;
+        display: block;
+    }
+
+    .image.left {
+        float: left;
+        margin: 0 2em 2em 0;
+        top: 0.25em;
+    }
+
+    .image.right {
+        float: right;
+        margin: 0 0 2em 2em;
+        top: 0.25em;
+    }
+
+    .image.left, .image.right {
+        max-width: 40%;
+    }
+
+        .image.left img, .image.right img {
+            width: 100%;
+        }
+
+    .image.fit {
+        display: block;
+        margin: 0 0 2em 0;
+        width: 100%;
+    }
+
+        .image.fit img {
+            width: 100%;
+        }
